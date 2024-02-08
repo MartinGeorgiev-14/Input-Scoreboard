@@ -1,0 +1,134 @@
+:root{
+    --main-color: #FFB64F;
+    --effect-color: #A87732;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Quando", serif;
+}
+
+/* Start of header styling */
+
+header{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+header #user-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+    gap: 1rem;
+}
+
+header #user-form .user-input{
+    
+    border: solid 1px;
+    border-color: var(--main-color);
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    outline-color: var(--effect-color);
+    width: 12vw;
+} 
+
+header #user-form #user-submit{
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: white;
+}
+
+/* Removes add and remove arrow buttons of input of type number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+header #user-form #user-submit:hover{
+    background-color: var(--effect-color);
+    border-color: var(--effect-color);
+    transition: ease-in-out 0.2s;
+}
+
+header #error-msg-container{
+    margin-top: 1rem;
+}
+
+header .error-msg{
+    color: red;
+    font-weight: bold;
+}
+
+/* End of header styling */
+
+/* Start of main styling */
+
+main{
+    margin-top: 2.2rem;
+    background-color: red;
+    width: 60%;
+}
+
+main .user-container{
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    padding-left: 0.6rem;
+    padding-right: 3rem
+}
+
+main .user-container .user-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+}
+
+main .user-container .user-controls{
+    display: flex;
+    gap: 0.3rem;
+}
+
+main .user-container .user-controls button{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    
+}
+
+main .user-container .user-controls button:hover{
+    background-color: var(--effect-color);
+    transition: ease-in-out 0.2s;
+}
+
+main .user-container .user-controls .delete-button{
+    color: red;
+}
+
+main .user-container .user-controls .delete-button:hover{
+    color: white;
+    background-color: red;
+    transition: ease-in-out 0.2s;
+}
+
+
+/* End of main styling */

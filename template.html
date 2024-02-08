@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles\main.css">
+    <script src="https://kit.fontawesome.com/0a57beecd2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quando&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>30 Days Of JavaScript Challenge Leaderboard</h1>
+            <form action="" id="user-form">
+                <input type="text" class="user-input" placeholder="First Name">
+                <input type="text" class="user-input" placeholder="Last Name">
+                <input type="text" class="user-input" placeholder="Country">
+                <input type="number" class="user-input" placeholder="Player Score">
+                <input type="submit" class="user-input" id="user-submit" value="Add Player">
+            </form>
+            <div id="error-msg-container">
+                <p class="error-msg">All fiels are required</p>
+                <p class="error-msg">All fiels are required</p>
+            </div>
+       
+    </header>
+    <main>
+        <div class="user-container">
+            <div class="user-info">
+                <div class="user-name-date">
+                    <p>Margin Georgiev</p>
+                    <p>APR 14 2002 14:20</p>
+                </div>
+                <p>United Kindom</p>
+                <p>100</p>
+            </div>
+            <div class="user-controls">
+                <button class="delete-button"><i class="fa-solid fa-trash"></i></button>
+                <button>+5</button>
+                <button>-5</button>
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts\main.js" type="module"></script>
+</body>
+</html>
